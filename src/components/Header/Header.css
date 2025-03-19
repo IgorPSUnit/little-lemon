@@ -1,0 +1,11 @@
+.header-container{
+    background-color: #edefee;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+img{
+    width: 200px;
+    margin: 20px;
+}

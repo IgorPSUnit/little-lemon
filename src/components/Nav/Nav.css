@@ -1,0 +1,9 @@
+.nav-container{
+    width: 100%;
+    justify-content: center;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}

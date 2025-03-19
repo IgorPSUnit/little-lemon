@@ -1,0 +1,19 @@
+.footer-container{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 417px;
+    background: #495E57;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+}
+
+.footer-logo > img{
+    width: 80px;
+}
+
+li{
+    list-style:none;
+}
