@@ -1,4 +1,6 @@
 import React from "react";
+import { TestimonialsContent, TestimonialsSection, TestimonialsCards } from "./Testimonias.styles";
+
 
 const listTestimonials = [
     {
@@ -23,20 +25,22 @@ const listTestimonials = [
 
 const Testimonials = () => {
     return (
-        <section className="testimonials">
+        <TestimonialsSection>
             <h2 className="testimonials__title">Testimonials</h2>
-            <div className="testimonials__container">
+            <TestimonialsContent>
+            <TestimonialsCards>
                 {listTestimonials.map((testimonial) => {
                     return (
                         <div key={testimonial.id} className="testimonials__item">
-                            <p className="testimonials__item-description">{testimonial.description}</p>
                             <h3 className="testimonials__item-name">{testimonial.name}</h3>
                             <p className="testimonials__item-title">{testimonial.title}</p>
+                            <p className="testimonials__item-description">{testimonial.description}</p>
                         </div>
                     );
                 })}
-            </div>
-        </section>
+            </TestimonialsCards>
+            </TestimonialsContent>
+        </TestimonialsSection>
     );
 };
 export default Testimonials;

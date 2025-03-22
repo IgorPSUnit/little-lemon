@@ -24,3 +24,7 @@ export const PrimaryButton = styled.button`
         }
 
 `;
+
+export const PrimaryH3 = styled.h3`
+    font-family: 'Markazi', serif;
+`;

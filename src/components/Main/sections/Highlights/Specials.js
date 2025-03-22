@@ -1,4 +1,7 @@
 import React from "react";
+import { SpecialsSection, SpecialsCardContainer, SpecialsCard, SpecialImg, SpecialDescription, SpecialTittleSection, SpecialDeliveryButton, HeaderContainer} from "./Specials.styles";
+import { PrimaryButton, PrimaryH3 } from "../../../StyleGuide/StyleGuide.styles";
+import BruschettaIcon from "../../../assets/bruchetta.svg";
 
 const topDishes = [
   {
@@ -10,7 +13,7 @@ const topDishes = [
   },
   {
     id: 2,
-    imagem: require("../../../assets/bruchetta.svg"),
+    imagem: require("../../../assets/bruchetta.jpg"),
     name: "Brushetta",
     price: 5.99,
     description: "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. "
@@ -19,7 +22,7 @@ const topDishes = [
     id: 3,
     imagem: require("../../../assets/lemon dessert.jpg"),
     name: "Lemon Dessert",
-    price: 5.00,
+    price: 5.99,
     description: "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
   }
 ];
@@ -27,24 +30,29 @@ const topDishes = [
 
 const Specials = () => {
     return (
-        <section className="specials">
-            <h2 className="specials__title">This weeks specials</h2>
-            <div className="specials__container">
-                {topDishes.map((dish) => {
-                    return (
-                        <div key={dish.id} className="specials__item">
-                            <img src={dish.imagem} alt={dish.name} />
-                            <h3 className="specials__item-title">{dish.name}</h3>
-                            <p className="specials__item-description">{dish.description}</p>
-                            <p className="specials__item-price">${dish.price}</p>
-                        </div>
-                    );
-                })}
-                <div className="specials__button">
-                    <button className="btn btn--primary">Order a delivery</button>
-                </div>
-            </div>
-        </section>
+        <SpecialsSection>
+              <HeaderContainer>
+                <h2 className="specials__title">This weeks specials</h2>
+                <PrimaryButton>Order a delivery</PrimaryButton>
+              </HeaderContainer>
+              <SpecialsCardContainer>
+                  {topDishes.map((dish) => {
+                      return (
+                        <SpecialsCard>
+                            <div key={dish.id} className="specials__item">
+                                <SpecialImg src={dish.imagem} alt={dish.name} />
+                                <SpecialTittleSection>
+                                  <PrimaryH3 className="specials__item-title">{dish.name}</PrimaryH3>
+                                  <h3 className="specials__item-price">${dish.price}</h3>
+                                </SpecialTittleSection>
+                                <SpecialDescription>{dish.description}</SpecialDescription>
+                                <SpecialDeliveryButton>Order a delivery</SpecialDeliveryButton>
+                            </div>
+                          </SpecialsCard>
+                      );
+                  })}
+              </SpecialsCardContainer>
+        </SpecialsSection>
     );
 };
 export default Specials;
