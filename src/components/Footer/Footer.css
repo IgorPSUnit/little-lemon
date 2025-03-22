@@ -1,8 +1,4 @@
 .footer-container{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     height: 417px;
     background: #495E57;
     display: flex;

@@ -1,0 +1,5 @@
+.specials{
+    display: flex;
+    justify-content: space-between;
+    background-color: #edefee;
+}

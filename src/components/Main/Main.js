@@ -1,13 +1,18 @@
 import React from "react";
+import About from "./sections/About/About";
+import Hero from "./sections/Hero/Hero";
+import Specials from "./sections/Highlights/Specials";
+import Testimonials from "./sections/Testimonials/Testimonials";
 
 const Main = () => {
     return (
-        <main className="main-container">
-            <div className="main-content">
-                <h1>Welcome to our restaurant</h1>
-                <p>Discover our menu and enjoy our delicious dishes</p>
-            </div>
-        </main>
-    );
-}
+        <>
+            <Hero />
+            <Specials />
+            <Testimonials />
+            <About />
+        </>
+
+);
+};
 export default Main;

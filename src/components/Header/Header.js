@@ -1,17 +1,18 @@
 import React from 'react';
-import './Header.css';
 import logo from './Logo.png';
 import Nav from '../Nav/Nav';
+import { Container } from '../StyleGuide/StyleGuide.styles';
+import { HeaderContainer, Logo } from './Header.styles';
 
 const Header = () => {
     return (
-        <header className="header-container">
-            <div className="logo">
-                <img src={logo} alt="Logo do navegador" />
-            </div>
-
-            <Nav />
-        </header>
+        <HeaderContainer>
+            <Container> 
+                    <Logo src={logo} alt="Logo do navegador" />
+                    <Nav />
+            </Container>
+        </HeaderContainer>
+       
     );
 };
 

@@ -1,16 +1,16 @@
 import React from 'react';
-import './Nav.css';
+import { NavContainer, NavLinks } from './Nav.styles';
 
 const Nav = () => {
     return (
-        <nav className="nav-container">
-            <ul className="nav-links">
+        <NavContainer>
+            <NavLinks>
                 <li><a href=''>Home</a></li>
                 <li><a href=''>About</a></li>
                 <li><a href=''>Menu</a></li>
                 <li><a href=''>Reserve a Table!</a></li>
-            </ul>
-        </nav>
+            </NavLinks>
+        </NavContainer>
     );
 };
 
