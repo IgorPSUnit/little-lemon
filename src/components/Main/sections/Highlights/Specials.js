@@ -1,7 +1,7 @@
 import React from "react";
-import { SpecialsSection, SpecialsCardContainer, SpecialsCard, SpecialImg, SpecialDescription, SpecialTittleSection, SpecialDeliveryButton, HeaderContainer} from "./Specials.styles";
-import { PrimaryButton, PrimaryH3 } from "../../../StyleGuide/StyleGuide.styles";
-import BruschettaIcon from "../../../assets/bruchetta.svg";
+import { SpecialsSection, SpecialsCardContainer, SpecialsCard, SpecialImg, SpecialDescription, SpecialTittleSection, SpecialDeliveryButton, HeaderContainer, SpecialCardContent} from "./Specials.styles";
+import { PrimaryButton, Link } from "../../../StyleGuide/StyleGuide.styles";
+import order from "../../../assets/order.svg";
 
 const topDishes = [
   {
@@ -13,7 +13,7 @@ const topDishes = [
   },
   {
     id: 2,
-    imagem: require("../../../assets/bruchetta.jpg"),
+    imagem: require("../../../assets/bruschetta.jpg"),
     name: "Brushetta",
     price: 5.99,
     description: "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil. "
@@ -41,12 +41,14 @@ const Specials = () => {
                         <SpecialsCard>
                             <div key={dish.id} className="specials__item">
                                 <SpecialImg src={dish.imagem} alt={dish.name} />
-                                <SpecialTittleSection>
-                                  <PrimaryH3 className="specials__item-title">{dish.name}</PrimaryH3>
-                                  <h3 className="specials__item-price">${dish.price}</h3>
-                                </SpecialTittleSection>
-                                <SpecialDescription>{dish.description}</SpecialDescription>
-                                <SpecialDeliveryButton>Order a delivery</SpecialDeliveryButton>
+                                <SpecialCardContent>
+                                  <SpecialTittleSection>
+                                    <h3 className="specials__item-title">{dish.name}</h3>
+                                    <h3 className="specials__item-price">${dish.price}</h3>
+                                  </SpecialTittleSection>
+                                  <SpecialDescription>{dish.description}</SpecialDescription>
+                                  <Link>Order a delivery  &nbsp;<img src={order} alt="order do footer" /></Link>
+                                </SpecialCardContent>
                             </div>
                           </SpecialsCard>
                       );

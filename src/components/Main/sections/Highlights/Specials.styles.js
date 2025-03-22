@@ -15,6 +15,7 @@ export const SpecialsCardContainer = styled.div`
     display: flex;
     flex-direction: row;
     gap: 32px;
+    padding:32px;
     `;
 
 export const SpecialsCard = styled.div`
@@ -22,12 +23,10 @@ export const SpecialsCard = styled.div`
     background-color:#EDEFEE;
     flex-direction: row;
     gap: 60px;
-    padding: 12px;
-    border-radius:8px;
+    border-radius:10px;
     width: 265px;
     height: 440px;
     .specials__item-price{ 
-        font-family: 'Markazi', serif;
         color: #EE9972;
     }
     `;
@@ -39,17 +38,19 @@ export const SpecialTittleSection = styled.div`
     `;
 
 export const SpecialDescription = styled.p`
-    font-family: 'Markazi', serif;
     height: 114px;
     `;
 
 export const SpecialImg = styled.img`
     max-height: 145px;
     width:100%;
+    border-top-left-radius: 10px;  
+    border-top-right-radius: 10px;
+
 `;
 
 export const SpecialDeliveryButton = styled.button`
-    background-color: #f4ce14;
+        background-color: #f4ce14;
         color: #495e57;
         border: none;
         padding: 12px 20px;
@@ -63,3 +64,6 @@ export const SpecialDeliveryButton = styled.button`
         }
 `;
 
+export const SpecialCardContent = styled.div`
+    padding: 12px;
+`;
