@@ -32,7 +32,7 @@ const Specials = () => {
     return (
         <SpecialsSection>
               <HeaderContainer>
-                <h2 className="specials__title">This weeks specials</h2>
+                <h1 className="specials__title">This weeks specials</h1>
                 <PrimaryButton>Order a delivery</PrimaryButton>
               </HeaderContainer>
               <SpecialsCardContainer>

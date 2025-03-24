@@ -15,14 +15,16 @@ export const HeroContent = styled.div`
     height: 420px;
     
     h1{
-        font-size: 3rem;
         color: #f4ce14;
-        margin-bottom: 5px;
+        line-height: 65px;
+        white-space: nowrap;
+        margin:8px;
     }
-    h3{
-        font-size: 1.5rem;
+    h4{
+        
         color: #edefee;
         margin-bottom: 5px;
+        font-weight: 500;
     }
 
     p{
@@ -34,7 +36,8 @@ export const HeroContent = styled.div`
     `;
 
 export const HeroImage = styled.img`
-        width: 375px;
-        height: 325px;
+        width: auto;
+        height: 380px;
         align-self: center;
+            border-radius: 15px;
     `;

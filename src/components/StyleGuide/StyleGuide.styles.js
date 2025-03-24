@@ -1,7 +1,7 @@
 import {createGlobalStyle,  styled}  from 'styled-components';
 
 export const Container = styled.div`
-    padding: 32px;
+    padding: 2rem 14rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -11,17 +11,18 @@ export const Container = styled.div`
 
 export const PrimaryButton = styled.button`
         background-color: #f4ce14;
-        color: #495e57;
-        border: none;
-        padding: 10px 20px;
-        font-size: 1rem;
-        cursor: pointer;
-        margin-bottom: 10px;
-
-        &:hover{
-            background-color: #495e57;
-            color: #f4ce14;
-        }
+            border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    height: 45px;
+    line-height: 23px;
+    outline: none;
+    padding: 10px;
+    transition: all .2s ease-in-out;
+    width: 180px;
 
 `;
 
@@ -48,6 +49,9 @@ export const Paragrafs = styled.p`
 export const GlobalStyle = createGlobalStyle`
     h1, h2, h3 {
         font-family: 'Markazi', serif;
+    }
+    h1{
+        font-size:70px;
     }
 
     p {

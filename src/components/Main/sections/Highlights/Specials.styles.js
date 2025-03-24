@@ -2,12 +2,14 @@ import styled from "styled-components";
 
 export const SpecialsSection = styled.section`
     background-color: ffff;
+    padding: 2rem 14rem;
 `;
 
 export const HeaderContainer = styled.div`
     display: flex;
     padding: 32px;
     justify-content: space-between;
+        align-items: center;
 
 `;
 
@@ -16,6 +18,8 @@ export const SpecialsCardContainer = styled.div`
     flex-direction: row;
     gap: 32px;
     padding:32px;
+    align-items: center;
+    justify-content: center;
     `;
 
 export const SpecialsCard = styled.div`

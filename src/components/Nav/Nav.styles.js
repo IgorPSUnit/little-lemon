@@ -12,7 +12,6 @@ export const NavLinks = styled.ul`
     list-style: none;
     display:flex;
     flex-direction: row;
-
     li a{
         text-decoration: none;
         color:  #333;

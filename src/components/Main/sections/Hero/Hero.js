@@ -9,7 +9,7 @@ const Hero = () => {
       <Container>
         <HeroContent>
           <h1 className="hero__title">Little Lemon</h1>
-          <h3 className="hero__subtitle">Chicago</h3>
+          <h4 className="hero__subtitle">Chicago</h4>
           <p className="hero-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <PrimaryButton className="btn btn--primary">Reserve a table</PrimaryButton>  
         </HeroContent>
