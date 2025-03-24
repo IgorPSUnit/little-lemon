@@ -4,21 +4,18 @@ export const HeroSection = styled.section`
     background-color: #495e57;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     `;
 
 export const HeroContent = styled.div`
     display: flex;
     flex-direction: column;
     padding-top: 10px;
-    width: 330px;
-    height: 420px;
+    width:50%;
     
     h1{
         color: #f4ce14;
         line-height: 65px;
-        white-space: nowrap;
-        margin:8px;
+        margin:0px;
     }
     h4{
         
