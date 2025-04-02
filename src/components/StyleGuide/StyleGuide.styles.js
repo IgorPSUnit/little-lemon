@@ -10,12 +10,12 @@ export const Container = styled.div`
 
 
 export const PrimaryButton = styled.button`
-        background-color: #f4ce14;
-            border: none;
+    background-color: #f4ce14;
+    border: none;
     border-radius: 10px;
     cursor: pointer;
     font-family: 'Karla', sans-serif;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 700;
     height: 45px;
     line-height: 23px;
@@ -23,7 +23,6 @@ export const PrimaryButton = styled.button`
     padding: 10px;
     transition: all .2s ease-in-out;
     width: 180px;
-
 `;
 
 export const Link = styled.a`

@@ -1,23 +1,37 @@
 
-import React from 'react';
+import React from 'react'
+import { Route, Routes } from "react-router-dom";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
 import { GlobalStyle } from './components/StyleGuide/StyleGuide.styles';
+import About from './components/Main/sections/About/About';
+import Specials from './components/Main/sections/Highlights/Specials';
+import Login from './components/Main/sections/Login/LoginPage';
+import Reservation from './components/Main/sections/Reservation/Reservations';
+import ConfirmedReservation from './components/Main/sections/Reservation/confirmedReservation';
+import NotFound from './components/Main/sections/NotFound/NotFound';
 
 function App() {
   return (
-    <>
-    <meta name="description" content="This is the Little Lemon Restaurant Website. A place with delicius food and wonderfull place to visit"/>
-    <meta name="og:title" content="Little Lemon Website"/>
-    <meta name="og:description" content="Experience the taste of Chicago at Little Lemon, a family-owned restaurant serving fresh and delicious dishes for over 20 years."/>
-    <meta name="og:image" content="./assets/restaurant.jpg"/>
-    <meta property="og:type" content="website" />
-      <GlobalStyle/>
+      <>
+      <GlobalStyle />
       <Header />
-      <Main />
-      <Footer/>
-    </>
+      <Routes>
+        <Route path='/' element={<Main />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/menu' element={<Specials />} />
+        <Route path='/reservation' element={<Reservation />} />
+        <Route
+            path="/confirmedReservation"
+            element={<ConfirmedReservation />}
+          />
+        <Route path='/order' element={<Main />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='*' element={<NotFound/>}/>
+      </Routes>
+      <Footer />
+      </>
   );
 }
 

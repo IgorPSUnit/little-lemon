@@ -1,6 +1,5 @@
 import styled from "styled-components";
 export const FooterContainer = styled.footer`
-    height:332px;
     background: #495E57;
     display: flex;
     gap:36px;

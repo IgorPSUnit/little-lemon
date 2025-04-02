@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SpecialsSection = styled.section`
     background-color: ffff;
-    padding: 2rem 14rem;
+    
 `;
 
 export const HeaderContainer = styled.div`
@@ -43,6 +43,7 @@ export const SpecialTittleSection = styled.div`
 
 export const SpecialDescription = styled.p`
     height: 114px;
+    margin-bottom: 50px;
     `;
 
 export const SpecialImg = styled.img`
@@ -70,4 +71,5 @@ export const SpecialDeliveryButton = styled.button`
 
 export const SpecialCardContent = styled.div`
     padding: 12px;
+    
 `;
